@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    background-image: url(https://i.ytimg.com/vi/317jz-PU7Mg/maxresdefault.jpg);
+    background-size: cover;
+    animation: malemolencia 1.3s infinite;
+    overflow: hidden;
+}
+
+body {
+    position: absolute;
+    top: 40vh;
+    font: normal 80px sans-serif;
+    color: #fff;
+    text-shadow: 2px 0 20px #fff;
+    animation: marquee 3s infinite;
+}
+
+
+
+@keyframes marquee {
+    0% {
+        right: -5%;
+    }
+    100% {
+        right: 110%;
+    }
+}
+
+@keyframes malemolencia {
+    0% {
+        filter: hue-rotate(0) contrast(1.2);
+        transform: rotate(0);
+      }
+      10% {
+        filter: hue-rotate(100deg) contrast(1);
+      }
+      25% {
+        filter: hue-rotate(50deg) contrast(1.2);
+        transform: scale(1.1) rotate(10deg);
+      }
+      45% {
+        filter: hue-rotate(300deg) contrast(1);
+        transform: rotate(0);
+      }
+      65% {
+        filter: hue-rotate(260deg) contrast(1.2);
+      }
+      85% {
+        filter: hue-rotate(200deg) contrast(1);
+        transform: scale(1.05) rotate(-10deg);
+      }
+      100% {
+        filter: hue-rotate(0) contrast(1.2);
+        transform: rotate(0);
+      }
+}
