@@ -1,7 +1,7 @@
 
 
 
-const name = 'Ana'
+const name = 'Sky'
 let age = 17
 let year = 2021
 const human = false
